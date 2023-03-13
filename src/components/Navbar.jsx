@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   const [active, setActive] = useState('');
+  const [menuOpen, setMenuOpen] = useState(false);
 
   return (
     <nav
@@ -38,6 +39,38 @@ const Navbar = () => {
             </li>
           ))}
         </ul>
+
+        {/* For Mobile Navigation */}
+        <div className="sm:hidden flex flex-1 justify-end items-center">
+          <img
+            alt="menu"
+            src={menuOpen ? close : menu}
+            className="w-[28px] h-[28px] object-contain cursor-pointer"
+            onClick={() => setMenuOpen(!menuOpen)}
+          />
+          <div
+            className={`${
+              menuOpen ? 'flex' : 'hidden'
+            } p-6 black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl`}
+          >
+            <ul className="list-none flex justify-end items-start flex-col gap-4">
+              {navLinks.map((link) => (
+                <li
+                  key={link.id}
+                  className={`${
+                    active === link.title ? 'text-white' : 'text-secondary'
+                  } font-medium font-poppins cursor-pointer text-[16px]`}
+                  onClick={() => {
+                    setActive(link.title);
+                    setMenuOpen(!menuOpen);
+                  }}
+                >
+                  <a href={`#${link.id}`}>{link.title}</a>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
       </div>
     </nav>
   );
