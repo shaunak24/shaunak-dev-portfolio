@@ -40,6 +40,11 @@ export const navLinks = [
   },
 ];
 
+const about = {
+  introduction:
+    "Hi 👋🏻, As a software developer, I am passionate about creating innovative solutions that make a positive impact on people's lives. I possess 3 years of experience in backend development and have a full range of technical skills, including Java, Spring, Spring Boot, Node.js, React.js, PL/SQL, and MongoDB. I am always eager to learn new things and tackle challenging situations, which is why I love software development. I have successfully driven projects end to end and am always ready to adapt or pivot according to the end goal. My commitment to excellence makes me an asset to any team I join. Let's work together to bring your ideas to life!",
+};
+
 const services = [
   {
     title: 'Web Developer',
@@ -262,4 +267,4 @@ const projects = [
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+export { about, services, technologies, experiences, testimonials, projects };
