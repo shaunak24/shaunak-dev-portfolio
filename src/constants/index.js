@@ -47,21 +47,21 @@ const about = {
 
 const services = [
   {
-    title: 'Web Developer',
-    icon: web,
-  },
-  {
-    title: 'React Native Developer',
-    icon: mobile,
-  },
-  {
     title: 'Backend Developer',
     icon: backend,
   },
   {
-    title: 'Content Creator',
-    icon: creator,
+    title: 'React Developer',
+    icon: mobile,
   },
+  {
+    title: 'Web Developer',
+    icon: web,
+  },
+  // {
+  //   title: 'Content Creator',
+  //   icon: creator,
+  // },
 ];
 
 const technologies = [
