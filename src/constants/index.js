@@ -1,7 +1,6 @@
 import {
   mobile,
   backend,
-  creator,
   web,
   javascript,
   typescript,
@@ -148,7 +147,7 @@ const experiences = [
     ],
   },
   {
-    title: 'Junior Software Engineer',
+    title: 'Software Engineer Intern',
     company_name: 'Interactive Brokers',
     icon: interactive_brokers,
     iconBg: '#E6DEDD',
