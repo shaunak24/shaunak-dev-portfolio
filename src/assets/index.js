@@ -20,6 +20,9 @@ import redux from './tech/redux.png';
 import tailwind from './tech/tailwind.png';
 import typescript from './tech/typescript.png';
 import threejs from './tech/threejs.svg';
+import java from './tech/java.png';
+import spring_boot from './tech/spring_boot.png';
+import pl_sql from './tech/pl_sql.png';
 
 import autodesk from './company/autodesk.jpeg';
 import interactive_brokers from './company/interactive_brokers.jpeg';
@@ -42,6 +45,9 @@ export {
   figma,
   git,
   html,
+  java,
+  spring_boot,
+  pl_sql,
   javascript,
   mongodb,
   nodejs,

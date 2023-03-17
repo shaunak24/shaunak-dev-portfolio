@@ -4,15 +4,15 @@ import {
   web,
   javascript,
   typescript,
-  html,
-  css,
+  java,
+  spring_boot,
+  pl_sql,
   reactjs,
   redux,
   tailwind,
   nodejs,
   mongodb,
   git,
-  figma,
   docker,
   autodesk,
   interactive_brokers,
@@ -67,12 +67,12 @@ const services = [
 
 const technologies = [
   {
-    name: 'HTML 5',
-    icon: html,
+    name: 'Java',
+    icon: java,
   },
   {
-    name: 'CSS 3',
-    icon: css,
+    name: 'Spring Boot',
+    icon: spring_boot,
   },
   {
     name: 'JavaScript',
@@ -103,16 +103,16 @@ const technologies = [
     icon: mongodb,
   },
   {
+    name: 'PL/SQL',
+    icon: pl_sql,
+  },
+  {
     name: 'Three JS',
     icon: threejs,
   },
   {
     name: 'git',
     icon: git,
-  },
-  {
-    name: 'figma',
-    icon: figma,
   },
   {
     name: 'docker',
