@@ -7,7 +7,6 @@ import { Link } from 'react-router-dom';
 const Navbar = () => {
   const [active, setActive] = useState('');
   const [menuOpen, setMenuOpen] = useState(false);
-  console.log(navLinks);
 
   return (
     <nav

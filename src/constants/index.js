@@ -36,6 +36,10 @@ export const navLinks = [
     title: 'Work',
   },
   {
+    id: 'projects',
+    title: 'Projects',
+  },
+  {
     id: 'contact',
     title: 'Contact',
   },
@@ -227,6 +231,7 @@ const projects = [
     ],
     image: carrent,
     source_code_link: 'https://github.com/',
+    deployment_link: 'https://github.com/',
   },
   {
     name: 'Job IT',
@@ -248,6 +253,7 @@ const projects = [
     ],
     image: jobit,
     source_code_link: 'https://github.com/',
+    deployment_link: 'https://github.com/',
   },
   {
     name: 'Trip Guide',
@@ -268,6 +274,7 @@ const projects = [
       },
     ],
     image: tripguide,
+    deployment_link: 'https://github.com/',
     source_code_link: 'https://github.com/',
   },
 ];

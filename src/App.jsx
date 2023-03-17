@@ -8,7 +8,7 @@ import {
   Navbar,
   StarsCanvas,
   Tech,
-  Works,
+  Projects,
 } from './components';
 import { BrowserRouter } from 'react-router-dom';
 
@@ -23,7 +23,7 @@ const App = () => {
         <About />
         <Experience />
         <Tech />
-        <Works />
+        <Projects />
         <Feedbacks />
         <div className="relative z-0">
           <Contact />
