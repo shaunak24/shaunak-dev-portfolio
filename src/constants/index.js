@@ -16,10 +16,10 @@ import {
   docker,
   autodesk,
   interactive_brokers,
-  carrent,
-  jobit,
-  tripguide,
   threejs,
+  cryptoverse,
+  portfolio,
+  youtube,
 } from "../assets";
 
 export const navLinks = [
@@ -165,45 +165,78 @@ const experiences = [
   },
 ];
 
-const testimonials = [
-  {
-    testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
-  },
-  {
-    testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
-  },
-  {
-    testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
-  },
-];
-
 const projects = [
   {
-    name: "Car Rent",
+    name: "Cryptoverse",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "Web-based platform that allows users to search about crytocurrency stats, prices, news articles. Cryptoverse provides user interactive charts about price history with different configurations.",
     tags: [
       {
-        name: "react",
+        name: "react.js",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "chart.js",
+        color: "green-text-gradient",
+      },
+      {
+        name: "tailwind",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "redux-toolkit",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "rtk-query",
+        color: "green-text-gradient",
+      },
+      {
+        name: "ant-design",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: cryptoverse,
+    source_code_link: "https://github.com/shaunak24/cryptoverse-app",
+    deployment_link: "https://cryptoverse-s24.netlify.app/",
+  },
+  {
+    name: "Developer Portfolio",
+    description:
+      "My developer portfolio built using React Three Fibre and Tailwind CSS. I have leveraged the power of 3D models to showcase my work as a software developer in a fun and interactive way.",
+    tags: [
+      {
+        name: "react.js",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "react-three-fibre",
+        color: "green-text-gradient",
+      },
+      {
+        name: "tailwind",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "framer-motion",
+        color: "blue-text-gradient",
+      },
+    ],
+    image: portfolio,
+    source_code_link: "https://github.com/shaunak24/shaunak-dev-portfolio",
+    deployment_link: "https://shaunakt.com/",
+  },
+  {
+    name: "Youtube Clone",
+    description:
+      "A video streaming application where having features such as search using debouncing, nested comments section, live chat using API polling, related videos, trending videos.",
+    tags: [
+      {
+        name: "react.js",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "redux-toolkit",
         color: "green-text-gradient",
       },
       {
@@ -211,54 +244,10 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
-    source_code_link: "https://github.com/",
-    deployment_link: "https://github.com/",
-  },
-  {
-    name: "Job IT",
-    description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "restapi",
-        color: "green-text-gradient",
-      },
-      {
-        name: "scss",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: jobit,
-    source_code_link: "https://github.com/",
-    deployment_link: "https://github.com/",
-  },
-  {
-    name: "Trip Guide",
-    description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-    tags: [
-      {
-        name: "nextjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "supabase",
-        color: "green-text-gradient",
-      },
-      {
-        name: "css",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: tripguide,
-    deployment_link: "https://github.com/",
-    source_code_link: "https://github.com/",
+    image: youtube,
+    source_code_link: "https://github.com/shaunak24/youtube-clone",
+    deployment_link: "https://youtube-appl-clone.netlify.app/",
   },
 ];
 
-export { about, services, technologies, experiences, testimonials, projects };
+export { about, services, technologies, experiences, projects };
