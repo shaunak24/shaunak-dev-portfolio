@@ -49,25 +49,28 @@ const ComputerCanvas = () => {
       mediaQuery.removeEventListener("change", handleMediaQueryChange);
     };
   }, []);
+  console.log("isMobile:", isMobile);
 
   return (
-    <Canvas
-      frameloop="demand"
-      shadows
-      camera={{ position: [20, 3, 5], fov: 25 }}
-      gl={{ preserveDrawingBuffer: true }}
-    >
-      <Suspense fallback={<Loader />}>
-        <OrbitControls
-          maxPolarAngle={Math.PI / 2}
-          minPolarAngle={Math.PI / 2}
-          enableZoom={false}
-        />
-        <Computers isMobile={isMobile} />
-      </Suspense>
+    !isMobile && (
+      <Canvas
+        frameloop="demand"
+        shadows
+        camera={{ position: [20, 3, 5], fov: 25 }}
+        gl={{ preserveDrawingBuffer: true }}
+      >
+        <Suspense fallback={<Loader />}>
+          <OrbitControls
+            maxPolarAngle={Math.PI / 2}
+            minPolarAngle={Math.PI / 2}
+            enableZoom={false}
+          />
+          <Computers isMobile={isMobile} />
+        </Suspense>
 
-      <Preload all />
-    </Canvas>
+        <Preload all />
+      </Canvas>
+    )
   );
 };
 
