@@ -1,10 +1,10 @@
-import React, { Suspense, useState, useEffect } from 'react';
-import { Canvas } from '@react-three/fiber';
-import { OrbitControls, Preload, useGLTF } from '@react-three/drei';
-import { Loader } from '../../components';
+import React, { Suspense, useState, useEffect } from "react";
+import { Canvas } from "@react-three/fiber";
+import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
+import { Loader } from "../../components";
 
 const Computers = ({ isMobile }) => {
-  const computer = useGLTF('./desktop_pc/scene.gltf');
+  const computer = useGLTF("./desktop_pc/scene.gltf");
 
   return (
     <mesh>
@@ -33,7 +33,7 @@ const ComputerCanvas = () => {
 
   useEffect(() => {
     // add event listener for changes to screen size
-    const mediaQuery = window.matchMedia('(max-width: 500px)');
+    const mediaQuery = window.matchMedia("(max-width: 500px)");
     // set initial value of isMobile state variable
     setIsMobile(mediaQuery.matches);
 
@@ -43,10 +43,10 @@ const ComputerCanvas = () => {
     };
 
     // add callback function as listener for changes to media query
-    mediaQuery.addEventListener('change', handleMediaQueryChange);
+    mediaQuery.addEventListener("change", handleMediaQueryChange);
 
     return () => {
-      mediaQuery.removeEventListener('change', handleMediaQueryChange);
+      mediaQuery.removeEventListener("change", handleMediaQueryChange);
     };
   }, []);
 
