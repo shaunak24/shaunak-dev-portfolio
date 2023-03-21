@@ -1,12 +1,10 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import Tilt from 'react-tilt';
-import { styles } from '../styles';
-import { github } from '../assets';
-import { SectionWrapper } from './hoc';
-import { projects } from '../constants';
-import { textVariant, fadeIn } from '../utils/motion';
-import { ProjectCard } from '.';
+import React from "react";
+import { motion } from "framer-motion";
+import { styles } from "../styles";
+import { SectionWrapper } from "./hoc";
+import { projects } from "../constants";
+import { fadeIn } from "../utils/motion";
+import { ProjectCard } from ".";
 
 const Projects = () => {
   return (
@@ -19,7 +17,7 @@ const Projects = () => {
       <div className="w-full flex">
         <motion.p
           className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]"
-          variants={fadeIn('', '', 0.1, 1)}
+          variants={fadeIn("", "", 0.1, 1)}
         >
           Following projects showcase my skills and experience through
           real-world examples of my work. Each project is briefly described with
@@ -36,4 +34,4 @@ const Projects = () => {
   );
 };
 
-export default SectionWrapper(Projects, 'projects');
+export default SectionWrapper(Projects, "projects");

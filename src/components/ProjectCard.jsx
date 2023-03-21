@@ -1,14 +1,14 @@
-import { motion } from 'framer-motion';
-import Tilt from 'react-tilt';
-import { github, deployment } from '../assets';
-import { fadeIn } from '../utils/motion';
+import { motion } from "framer-motion";
+import Tilt from "react-parallax-tilt";
+import { github, deployment } from "../assets";
+import { fadeIn } from "../utils/motion";
 
 const Icon = ({ link, image, description }) => {
   if (!link) return;
   return (
     <div
       className="w-10 h-10 black-gradient justify-center items-center rounded-full flex cursor-pointer"
-      onClick={() => window.open(link, '_blank')}
+      onClick={() => window.open(link, "_blank")}
     >
       <img
         src={image}
@@ -29,7 +29,7 @@ const ProjectCard = ({
   deployment_link,
 }) => {
   return (
-    <motion.div variants={fadeIn('up', 'spring', index * 0.5, 0.75)}>
+    <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
       <Tilt
         options={{ max: 45, speed: 450, scale: 1 }}
         className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full"
