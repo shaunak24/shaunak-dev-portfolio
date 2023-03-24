@@ -9,10 +9,10 @@ const Tech = () => {
     <div className="flex flex-wrap flex-row justify-center gap-10">
       {technologies.map((tech) => (
         <Tooltip
-          disableFocusListener
           title={tech.name}
           placement="top"
           key={tech.name}
+          enterTouchDelay={0}
         >
           <div className="h-28 w-28">
             <BallCanvas icon={tech.icon} />
