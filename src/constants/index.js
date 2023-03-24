@@ -20,28 +20,28 @@ import {
   cryptoverse,
   portfolio,
   youtube,
-} from "../assets";
+} from '../assets';
 
 export const navLinks = [
   {
-    id: "",
-    title: "Home",
+    id: '',
+    title: 'Home',
   },
   {
-    id: "about",
-    title: "About",
+    id: 'about',
+    title: 'About',
   },
   {
-    id: "work",
-    title: "Work",
+    id: 'work',
+    title: 'Work',
   },
   {
-    id: "projects",
-    title: "Projects",
+    id: 'projects',
+    title: 'Projects',
   },
   {
-    id: "contact",
-    title: "Contact",
+    id: 'contact',
+    title: 'Contact',
   },
 ];
 
@@ -52,201 +52,201 @@ const about = {
 
 const services = [
   {
-    title: "Backend Developer",
+    title: 'Backend Developer',
     icon: backend,
   },
   {
-    title: "React Developer",
+    title: 'React Developer',
     icon: mobile,
   },
   {
-    title: "Web Developer",
+    title: 'Web Developer',
     icon: web,
   },
 ];
 
 const technologies = [
   {
-    name: "Java",
+    name: 'Java',
     icon: java,
   },
   {
-    name: "Spring Boot",
+    name: 'Spring Boot',
     icon: spring_boot,
   },
   {
-    name: "JavaScript",
+    name: 'JavaScript',
     icon: javascript,
   },
   {
-    name: "TypeScript",
+    name: 'TypeScript',
     icon: typescript,
   },
   {
-    name: "React JS",
+    name: 'React JS',
     icon: reactjs,
   },
   {
-    name: "Redux Toolkit",
+    name: 'Redux Toolkit',
     icon: redux,
   },
   {
-    name: "Tailwind CSS",
+    name: 'Tailwind CSS',
     icon: tailwind,
   },
   {
-    name: "Node JS",
+    name: 'Node JS',
     icon: nodejs,
   },
   {
-    name: "MongoDB",
+    name: 'MongoDB',
     icon: mongodb,
   },
   {
-    name: "PL/SQL",
+    name: 'PL/SQL',
     icon: pl_sql,
   },
   {
-    name: "Three JS",
+    name: 'Three JS',
     icon: threejs,
   },
   {
-    name: "git",
+    name: 'git',
     icon: git,
   },
   {
-    name: "docker",
+    name: 'docker',
     icon: docker,
   },
 ];
 
 const experiences = [
   {
-    title: "Software Development Engineer II",
-    company_name: "Autodesk",
+    title: 'Software Development Engineer II',
+    company_name: 'Autodesk',
     icon: autodesk,
-    iconBg: "#E6DEDD",
-    date: "November 2022 - Present",
+    iconBg: '#E6DEDD',
+    date: 'November 2022 - Present',
     points: [
-      "Working as a fullstack developer on Fusion 360 product, an integrated cloud CAD, CAM, CAE, and PCB software platform",
+      'Working as a fullstack developer on Fusion 360 product, an integrated cloud CAD, CAM, CAE, and PCB software platform',
       'Developing "Bill of Materials" capability in Fusion 360 desktop application and web version',
-      "Contributed to Universal Data Access (UDA), an initiative to provide a common data experience across various Autodesk products",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers",
-      "Tech Stack: React.js, Redux.js",
+      'Contributed to Universal Data Access (UDA), an initiative to provide a common data experience across various Autodesk products',
+      'Collaborating with cross-functional teams including designers, product managers, and other developers',
+      'Tech Stack: React.js, Redux.js',
     ],
   },
   {
-    title: "Junior Software Engineer",
-    company_name: "Interactive Brokers",
+    title: 'Junior Software Engineer',
+    company_name: 'Interactive Brokers',
     icon: interactive_brokers,
-    iconBg: "#E6DEDD",
-    date: "July 2020 - Nov 2022",
+    iconBg: '#E6DEDD',
+    date: 'July 2020 - Nov 2022',
     points: [
-      "Contributed to IB Customer System (IBCUST) involving the process of onboarding customers and related account management functions",
-      "Automated process to convert Uniform Gifts to Minors Act (UGMA) accounts to regular trading accounts enabling the Customer Support team to improve overall efficiency and retention rate",
-      "Worked on system for classification of Hong Kong customers as Professional Investors based on investment assets outlined by HK Securities and Futures Commission (SFC); helping in targeting new/specialized products such as Cryptocurrencies",
-      "Developed account statistics reporting system for IBKR IMPACT App highlighting major events in account lifecycle, providing the IB marketing team insights into App adoption and analysis of product offerings",
-      "Implemented data sanity checks for Consolidated Audit Trail (CAT) Customer and Account Information System (CAIS) reporting for FINRA (US Regulator); created time-efficient processes for validating data for 1.7M+ customer accounts",
-      "Tech Stack: J2EE, PL/SQL, Java, Python",
+      'Contributed to IB Customer System (IBCUST) involving the process of onboarding customers and related account management functions',
+      'Automated process to convert Uniform Gifts to Minors Act (UGMA) accounts to regular trading accounts enabling the Customer Support team to improve overall efficiency and retention rate',
+      'Worked on system for classification of Hong Kong customers as Professional Investors based on investment assets outlined by HK Securities and Futures Commission (SFC); helping in targeting new/specialized products such as Cryptocurrencies',
+      'Developed account statistics reporting system for IBKR IMPACT App highlighting major events in account lifecycle, providing the IB marketing team insights into App adoption and analysis of product offerings',
+      'Implemented data sanity checks for Consolidated Audit Trail (CAT) Customer and Account Information System (CAIS) reporting for FINRA (US Regulator); created time-efficient processes for validating data for 1.7M+ customer accounts',
+      'Tech Stack: J2EE, PL/SQL, Java, Python',
     ],
   },
   {
-    title: "Software Engineer Intern",
-    company_name: "Interactive Brokers",
+    title: 'Software Engineer Intern',
+    company_name: 'Interactive Brokers',
     icon: interactive_brokers,
-    iconBg: "#E6DEDD",
-    date: "Jan 2022 - Jan 2023",
+    iconBg: '#E6DEDD',
+    date: 'Jan 2022 - Jan 2023',
     points: [
-      "Contributed to Digital Account Management (DAM) Web Service based on Java (JAX-RS), used by registered Investment Advisors and Brokers for account creation/management",
-      "Automated process for non-US clients to re-certify their tax form (W8BEN), required by IRS every 3 years",
-      "Worked on new features in DAM including native language support for Chinese and Hebrew, creating additional accounts for users, dividend reinvestment election",
-      "Tech Stack: J2EE, PL/SQL, Java, Python",
+      'Contributed to Digital Account Management (DAM) Web Service based on Java (JAX-RS), used by registered Investment Advisors and Brokers for account creation/management',
+      'Automated process for non-US clients to re-certify their tax form (W8BEN), required by IRS every 3 years',
+      'Worked on new features in DAM including native language support for Chinese and Hebrew, creating additional accounts for users, dividend reinvestment election',
+      'Tech Stack: J2EE, PL/SQL, Java, Python',
     ],
   },
 ];
 
 const projects = [
   {
-    name: "Cryptoverse",
+    name: 'Cryptoverse',
     description:
-      "Web-based platform that allows users to search about crytocurrency stats, prices, news articles. Cryptoverse provides user interactive charts about price history with different configurations.",
+      'Web-based platform that allows users to search about crytocurrency stats, prices, news articles. Cryptoverse provides user interactive charts about price history with different configurations.',
     tags: [
       {
-        name: "react.js",
-        color: "blue-text-gradient",
+        name: 'react.js',
+        color: 'blue-text-gradient',
       },
       {
-        name: "chart.js",
-        color: "green-text-gradient",
+        name: 'chart.js',
+        color: 'green-text-gradient',
       },
       {
-        name: "tailwind",
-        color: "pink-text-gradient",
+        name: 'tailwind',
+        color: 'pink-text-gradient',
       },
       {
-        name: "redux-toolkit",
-        color: "blue-text-gradient",
+        name: 'redux-toolkit',
+        color: 'blue-text-gradient',
       },
       {
-        name: "rtk-query",
-        color: "green-text-gradient",
+        name: 'rtk-query',
+        color: 'green-text-gradient',
       },
       {
-        name: "ant-design",
-        color: "pink-text-gradient",
+        name: 'ant-design',
+        color: 'pink-text-gradient',
       },
     ],
     image: cryptoverse,
-    source_code_link: "https://github.com/shaunak24/cryptoverse-app",
-    deployment_link: "https://cryptoverse-s24.netlify.app/",
+    source_code_link: 'https://github.com/shaunak24/cryptoverse-app',
+    deployment_link: 'https://cryptoverse-s24.netlify.app/',
   },
   {
-    name: "Developer Portfolio",
+    name: 'Developer Portfolio',
     description:
-      "My developer portfolio built using React Three Fibre and Tailwind CSS. I have leveraged the power of 3D models to showcase my work as a software developer in a fun and interactive way.",
+      'My developer portfolio built using React Three Fibre and Tailwind CSS. I have leveraged the power of 3D models to showcase my work as a software developer in a fun and interactive way.',
     tags: [
       {
-        name: "react.js",
-        color: "blue-text-gradient",
+        name: 'react.js',
+        color: 'blue-text-gradient',
       },
       {
-        name: "react-three-fibre",
-        color: "green-text-gradient",
+        name: 'react-three-fibre',
+        color: 'green-text-gradient',
       },
       {
-        name: "tailwind",
-        color: "pink-text-gradient",
+        name: 'tailwind',
+        color: 'pink-text-gradient',
       },
       {
-        name: "framer-motion",
-        color: "blue-text-gradient",
+        name: 'framer-motion',
+        color: 'blue-text-gradient',
       },
     ],
     image: portfolio,
-    source_code_link: "https://github.com/shaunak24/shaunak-dev-portfolio",
-    deployment_link: "https://shaunakt.com/",
+    source_code_link: 'https://github.com/shaunak24/shaunak-dev-portfolio',
+    deployment_link: 'https://shaunakt.com/',
   },
   {
-    name: "Youtube Clone",
+    name: 'Youtube Clone',
     description:
-      "A video streaming application where having features such as search using debouncing, nested comments section, live chat using API polling, related videos, trending videos.",
+      'A video streaming application where having features such as search using debouncing, nested comments section, live chat using API polling, related videos, trending videos.',
     tags: [
       {
-        name: "react.js",
-        color: "blue-text-gradient",
+        name: 'react.js',
+        color: 'blue-text-gradient',
       },
       {
-        name: "redux-toolkit",
-        color: "green-text-gradient",
+        name: 'redux-toolkit',
+        color: 'green-text-gradient',
       },
       {
-        name: "tailwind",
-        color: "pink-text-gradient",
+        name: 'tailwind',
+        color: 'pink-text-gradient',
       },
     ],
     image: youtube,
-    source_code_link: "https://github.com/shaunak24/youtube-clone",
-    deployment_link: "https://youtube-appl-clone.netlify.app/",
+    source_code_link: 'https://github.com/shaunak24/youtube-clone',
+    deployment_link: 'https://youtube-appl-clone.netlify.app/',
   },
 ];
 
