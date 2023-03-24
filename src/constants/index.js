@@ -111,11 +111,11 @@ const technologies = [
     icon: threejs,
   },
   {
-    name: 'git',
+    name: 'Git',
     icon: git,
   },
   {
-    name: 'docker',
+    name: 'Docker',
     icon: docker,
   },
 ];
