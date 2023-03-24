@@ -8,6 +8,7 @@ import {
   useTexture,
 } from '@react-three/drei';
 import { Loader } from '../../components';
+import useMobile from '../hooks/useMobile';
 
 const Ball = (props) => {
   const [decal] = useTexture([props.imageUrl]);
@@ -36,7 +37,9 @@ const Ball = (props) => {
 };
 
 const BallCanvas = ({ icon }) => {
-  return (
+  const isMobile = useMobile();
+
+  return !isMobile ? (
     <Canvas frameloop="demand" gl={{ preserveDrawingBuffer: true }}>
       <Suspense fallback={<Loader />}>
         <OrbitControls enableZoom={false} />
@@ -45,6 +48,10 @@ const BallCanvas = ({ icon }) => {
 
       <Preload all />
     </Canvas>
+  ) : (
+    <div className="flex w-24 h-24 bg-[#fff8eb] rounded-full items-center justify-center">
+      <img src={icon} className="w-16 h-16" />
+    </div>
   );
 };
 
