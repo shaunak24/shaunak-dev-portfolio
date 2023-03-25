@@ -3,11 +3,11 @@ import {
   Contact,
   Experience,
   Hero,
-  Loader,
   Navbar,
   StarsCanvas,
   Tech,
   Projects,
+  Footer,
 } from './components';
 import { BrowserRouter } from 'react-router-dom';
 
@@ -27,6 +27,7 @@ const App = () => {
           <Contact />
           <StarsCanvas />
         </div>
+        <Footer />
       </div>
     </BrowserRouter>
   );

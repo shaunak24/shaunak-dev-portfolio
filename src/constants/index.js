@@ -1,3 +1,4 @@
+import { GitHub, LinkedIn, Mail, Twitter } from '@mui/icons-material';
 import {
   mobile,
   backend,
@@ -253,4 +254,27 @@ const projects = [
   },
 ];
 
-export { about, services, technologies, experiences, projects };
+const socialMedia = [
+  {
+    name: 'LinkedIn',
+    link: 'https://www.linkedin.com/in/shaunak24/',
+    icon: LinkedIn,
+  },
+  {
+    name: 'Github',
+    link: 'https://github.com/shaunak24',
+    icon: GitHub,
+  },
+  {
+    name: 'Gmail',
+    link: 'mailto:shaunak241997@gmail.com',
+    icon: Mail,
+  },
+  {
+    name: 'Twitter',
+    link: 'https://twitter.com/shaunakt24',
+    icon: Twitter,
+  },
+];
+
+export { about, services, technologies, experiences, projects, socialMedia };

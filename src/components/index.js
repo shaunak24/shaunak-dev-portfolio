@@ -12,6 +12,7 @@ import Experience from './Experience';
 import Projects from './Projects';
 import Contact from './Contact';
 import Loader from './Loader';
+import Footer from './Footer';
 import ProjectCard from './ProjectCard';
 
 export {
@@ -28,4 +29,5 @@ export {
   StarsCanvas,
   ProjectCard,
   Loader,
+  Footer,
 };
