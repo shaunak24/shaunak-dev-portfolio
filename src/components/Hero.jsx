@@ -1,9 +1,12 @@
 import React from 'react';
 import { styles } from '../styles';
-import { ComputersCanvas } from '../components';
+import { ComputersCanvas, EarthCanvas } from '../components';
 import { motion } from 'framer-motion';
+import useMobile from './hooks/useMobile';
 
 const Hero = () => {
+  const isMobile = useMobile();
+
   return (
     <section className="relative w-full h-screen mx-auto">
       <div
@@ -30,24 +33,30 @@ const Hero = () => {
       </div>
 
       {/* Computer Canvas */}
-      <ComputersCanvas />
+      {isMobile ? (
+        <EarthCanvas isMobile={isMobile} />
+      ) : (
+        <ComputersCanvas isMobile={isMobile} />
+      )}
 
       {/* Scroller Gif using framer motion */}
-      <div className="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center">
-        <a href="#about">
-          <div className="w-[35px] h-[64px] rounded-3xl border-4 border-secondary justify-center flex items-start p-2">
-            <motion.div
-              animate={{ y: [0, 24, 0] }}
-              transition={{
-                duration: 1.5,
-                repeat: Infinity,
-                repeatType: 'loop',
-              }}
-              className="w-3 h-3 rounded-full bg-secondary mb-1"
-            />
-          </div>
-        </a>
-      </div>
+      {!isMobile && (
+        <div className="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center">
+          <a href="#about">
+            <div className="w-[35px] h-[64px] rounded-3xl border-4 border-secondary justify-center flex items-start p-2">
+              <motion.div
+                animate={{ y: [0, 24, 0] }}
+                transition={{
+                  duration: 1.5,
+                  repeat: Infinity,
+                  repeatType: 'loop',
+                }}
+                className="w-3 h-3 rounded-full bg-secondary mb-1"
+              />
+            </div>
+          </a>
+        </div>
+      )}
     </section>
   );
 };
