@@ -1,14 +1,15 @@
-import { motion } from "framer-motion";
-import Tilt from "react-parallax-tilt";
-import { github, deployment } from "../assets";
-import { fadeIn } from "../utils/motion";
+import { Tooltip } from '@mui/material';
+import { motion } from 'framer-motion';
+import Tilt from 'react-parallax-tilt';
+import { github, deployment } from '../assets';
+import { fadeIn } from '../utils/motion';
 
 const Icon = ({ link, image, description }) => {
   if (!link) return;
   return (
     <div
       className="w-10 h-10 black-gradient justify-center items-center rounded-full flex cursor-pointer"
-      onClick={() => window.open(link, "_blank")}
+      onClick={() => window.open(link, '_blank')}
     >
       <img
         src={image}
@@ -29,7 +30,7 @@ const ProjectCard = ({
   deployment_link,
 }) => {
   return (
-    <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
+    <motion.div variants={fadeIn('up', 'spring', index * 0.5, 0.75)}>
       <Tilt
         options={{ max: 45, speed: 450, scale: 1 }}
         className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full"
@@ -42,12 +43,24 @@ const ProjectCard = ({
           />
 
           <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
-            <Icon link={source_code_link} image={github} description="github" />
-            <Icon
-              link={deployment_link}
-              image={deployment}
-              description="deployment link"
-            />
+            <Tooltip title="Source Code" placement="top" enterTouchDelay={0}>
+              <div>
+                <Icon
+                  link={source_code_link}
+                  image={github}
+                  description="github"
+                />
+              </div>
+            </Tooltip>
+            <Tooltip title="Deployment URL" placement="top" enterTouchDelay={0}>
+              <div>
+                <Icon
+                  link={deployment_link}
+                  image={deployment}
+                  description="deployment link"
+                />
+              </div>
+            </Tooltip>
           </div>
         </div>
 
