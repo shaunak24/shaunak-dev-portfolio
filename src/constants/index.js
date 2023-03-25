@@ -124,6 +124,7 @@ const experiences = [
   {
     title: 'Software Development Engineer II',
     company_name: 'Autodesk',
+    company_website: 'https://www.autodesk.in/',
     icon: autodesk,
     iconBg: '#E6DEDD',
     date: 'November 2022 - Present',
@@ -138,6 +139,7 @@ const experiences = [
   {
     title: 'Junior Software Engineer',
     company_name: 'Interactive Brokers',
+    company_website: 'https://www.interactivebrokers.com/en/home.php',
     icon: interactive_brokers,
     iconBg: '#E6DEDD',
     date: 'July 2020 - Nov 2022',
@@ -154,6 +156,7 @@ const experiences = [
     title: 'Software Engineer Intern',
     company_name: 'Interactive Brokers',
     icon: interactive_brokers,
+    company_website: 'https://www.interactivebrokers.com/en/home.php',
     iconBg: '#E6DEDD',
     date: 'Jan 2022 - Jan 2023',
     points: [

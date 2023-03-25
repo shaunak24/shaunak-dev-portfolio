@@ -9,9 +9,11 @@ import { styles } from '../styles';
 import { experiences } from '../constants';
 import { SectionWrapper } from './hoc';
 import { textVariant } from '../utils/motion';
+import { Tooltip } from '@mui/material';
 
 const ExperienceCard = ({ experience }) => {
-  const { date, iconBg, icon, points, company_name, title } = experience;
+  const { date, iconBg, icon, points, company_name, company_website, title } =
+    experience;
 
   return (
     <VerticalTimelineElement
@@ -20,13 +22,22 @@ const ExperienceCard = ({ experience }) => {
       date={date}
       iconStyle={{ background: iconBg }}
       icon={
-        <div className="flex justify-center items-center w-full h-full">
-          <img
-            src={icon}
-            alt={company_name}
-            className="w-[60%] h-[60%] object-contain"
-          />
-        </div>
+        <Tooltip
+          title={`Go to ${company_name} website`}
+          placement="top"
+          enterTouchDelay={0}
+        >
+          <div
+            className="flex justify-center items-center w-full h-full"
+            onClick={() => window.open(company_website, '_blank')}
+          >
+            <img
+              src={icon}
+              alt={company_name}
+              className="w-[60%] h-[60%] object-contain"
+            />
+          </div>
+        </Tooltip>
       }
     >
       <div>
