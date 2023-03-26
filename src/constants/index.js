@@ -233,7 +233,7 @@ const projects = [
   {
     name: 'Youtube Clone',
     description:
-      'A video streaming application where having features such as search using debouncing, nested comments section, live chat using API polling, related videos, trending videos.',
+      'A video streaming application having features such as search using debouncing, nested comments section, live chat using API polling, related videos, trending videos.',
     tags: [
       {
         name: 'react.js',
